@@ -13,7 +13,7 @@ Spring Boot와 JPA 학습 프로젝트
 ## ⚙️기술 스택
 
 - Java 17
-- Spring Boot
+- Spring Boot 4.1.0
 - Spring Data JPA
 - MariaDB
 - Maven
@@ -23,4 +23,3 @@ Spring Boot와 JPA 학습 프로젝트
 
 - 상품 등록
 - 상품 단건 조회
-- HTTP 메서드별 API 테스트
