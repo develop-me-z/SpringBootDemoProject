@@ -1,6 +1,6 @@
 # 🌟Spring Boot Demo Project
 
-Spring Boot와 JPA 학습 프로젝트
+Spring Boot 데모 프로젝트
 
 ## ✏️학습 내용
 
