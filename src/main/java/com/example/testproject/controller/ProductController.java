@@ -1,5 +1,7 @@
 package com.example.testproject.controller;
 
+import com.example.testproject.common.Constants;
+import com.example.testproject.common.exception.AroundHubException;
 import com.example.testproject.data.dto.ProductDto;
 import com.example.testproject.service.ProductService;
 import jakarta.validation.Valid;
@@ -62,6 +64,11 @@ public class ProductController {
     @DeleteMapping(value = "/product/{productId}")
     public ProductDto deleteProduct(@PathVariable String productId) {
         return null;
+    }
+
+    @PostMapping(value="/product/exception")
+    public void exceptionTest() throws AroundHubException {
+        throw new AroundHubException(Constants.ExceptionClass.PRODUCT, HttpStatus.FORBIDDEN, "접근이 금지되었습니다.");
     }
 
 }
