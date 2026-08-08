@@ -78,7 +78,7 @@ public class ProductControllerTest {
                         post("/api/v1/product-api/product")
                                 .content(content)
                                 .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk())
+                .andExpect(status().isAccepted())
                 .andExpect(jsonPath("$.productId").exists())
                 .andExpect(jsonPath("$.productName").exists())
                 .andExpect(jsonPath("$.productPrice").exists())
